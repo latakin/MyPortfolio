@@ -329,7 +329,7 @@ footer div {
 /*----Responsive Design----*/
 /*-----Navbar-----*/
 /*----HeroSection-----*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     .hero {
         flex-direction: column;
 
@@ -349,7 +349,7 @@ footer div {
     
 }
 /*----SkillsSection----*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     .skillsdiv {
         display: block;
         width: 60%;
@@ -358,7 +358,7 @@ footer div {
 }
 
 /*----ProjectSection----*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     .projectdiv {
         flex-direction: column;
         
