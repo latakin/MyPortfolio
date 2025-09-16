@@ -82,6 +82,14 @@ body {
     border-bottom: 2px solid #1E93AB;
 }
 
+.hamburger {
+    display: none;
+}
+
+.mobilenav {
+    display: none;
+}
+
 /*----Main Section-----*/
 main {
     margin-top: 70px;
@@ -328,8 +336,77 @@ footer div {
 
 /*----Responsive Design----*/
 /*-----Navbar-----*/
+body {
+    position: relative;
+    margin-top: 0;
+}
+main {
+    margin-top: 0;
+}
+
+.navlinkmobile {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -30px;
+    left: 0;
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    
+}
+.navlinkmobile ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    list-style-type: none;
+}
+
+.navlinkmobile ul li {
+    margin: 10px;
+    
+}
+.navlinkmobile ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 4px 7px;
+    border-radius: 4px;
+    font-size: 0.99rem;
+    transition: background-color 0.5s ease-in-out;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.navlinkmobile ul li a:hover {
+    color: white;
+    background-color: #1E93AB;
+    
+}
+
+.cancel {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+
 /*----HeroSection-----*/
 @media screen and (max-width: 450px) {
+    .navview {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
     .hero {
         flex-direction: column;
 
