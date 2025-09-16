@@ -340,9 +340,7 @@ body {
     position: relative;
     margin-top: 0;
 }
-main {
-    margin-top: 0;
-}
+
 
 .navlinkmobile {
     z-index: 2;
@@ -400,7 +398,11 @@ main {
 @media screen and (max-width: 450px) {
     .navview {
         display: none;
+        
     }
+    main {
+    margin-top: 0;
+}
 
     .hamburger {
         display: inline-block;
