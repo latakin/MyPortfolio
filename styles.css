@@ -336,13 +336,13 @@ footer div {
 
 /*----Responsive Design----*/
 /*-----Navbar-----*/
-body {
-    position: relative;
-    margin-top: 0;
-}
 
 
-.navlinkmobile {
+
+
+/*----HeroSection-----*/
+@media screen and (max-width: 450px) {
+    .navlinkmobile {
     z-index: 2;
     position: absolute;
     display: flex;
@@ -393,14 +393,15 @@ body {
     
 }
 
-
-/*----HeroSection-----*/
-@media screen and (max-width: 450px) {
     .navview {
         display: none;
         
     }
     main {
+    margin-top: 0;
+}
+body {
+    position: relative;
     margin-top: 0;
 }
 
