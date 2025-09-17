@@ -20,9 +20,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+
 body {
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
 }
 
 /* img {
@@ -88,7 +90,12 @@ body {
 
 .mobilenav {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+
 
 /*----Main Section-----*/
 main {
@@ -342,16 +349,17 @@ footer div {
 
 /*----HeroSection-----*/
 @media screen and (max-width: 450px) {
+
+
+
     .navlinkmobile {
     z-index: 2;
-    position: absolute;
     display: flex;
     flex-direction: column;
-    top: -30px;
-    left: 0;
     width: 50%;
     background-color: white;
     padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
 .navlinkmobile ul {
@@ -374,12 +382,20 @@ footer div {
     font-size: 0.99rem;
     transition: background-color 0.5s ease-in-out;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+        
+
 }
 .navlinkmobile ul li a:hover {
     color: white;
     background-color: #1E93AB;
     
+}
+
+.mobilenav {
+    display: none;
+    position: absolute;
+    top: -100px;
+    left: 0;
 }
 
 .cancel {
@@ -398,10 +414,6 @@ footer div {
         
     }
     main {
-    margin-top: 0;
-}
-body {
-    position: relative;
     margin-top: 0;
 }
 
